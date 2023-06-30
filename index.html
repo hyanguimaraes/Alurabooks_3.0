@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraBooks</title>
+    
+    <!-- ÍCONE NO TÍTULO -->
+    <link rel="icon" href="/img/Logo.svg" type = "image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">    
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container_cabecalho cabecalho_esquerdo">
+            <button class="cabecalho_menu_hamburguer" aria-label="Menu"><i></i></button>
+            <img src="img/Logo.svg" class="container_imagem" alt="Logo do AluraBooks">
+            <h1 class="cabecalho_titulo"><b class="cabecalho_titulo_negrito">Alura</b>Books</h1>
+        </div>
+
+        <ul class="cabecalho_opcoes">
+            <li class="cabecalho_opcoes_item"><button class="cabecalho_opcoes_botao" aria-label="Menu Categorias"><i></i>Categorias</button></li>
+            <li class="cabecalho_opcoes_item"><a href="#" class="cabecalho_opcoes_ancora">Favoritos</a></li>
+            <li class="cabecalho_opcoes_item"><a href="#" class="cabecalho_opcoes_ancora">Minha estante</a></li>
+        </ul>
+        
+        <div class="container_cabecalho cabecalho_direito">
+            <a href="/index.html" id="container_imagem_favoritos"><img src="img/Favoritos.svg" class="container_imagem" alt="Meus Favoritos"></a>
+            <a href="/index.html" class="imagem_com_texto"><img src="img/Compras.svg" class="container_imagem" alt="Carrinho de compras"><p class="cabecalho_logo_texto">Minha Sacola</p></a>
+            <button class="cabecalho_menu_usuario" aria-label="Menu"><i></i></button>
+        </div>
+    </header>
+
+    <nav class="lista_menu_hamburger">
+        <h2 class="lista_menu_titulo">Categorias</h2>
+        <a href="/index.html" class="lista_menu_link">Programação</a>
+        <a href="/index.html" class="lista_menu_link">Front-End</a>
+        <a href="/index.html" class="lista_menu_link">Infraestrutura</a>
+        <a href="/index.html" class="lista_menu_link">Business</a>
+        <a href="/index.html" class="lista_menu_link">Design & Ux</a>
+    </nav>
+
+    <nav class="lista_menu_usuario">
+        <h2 class="lista_menu_titulo">Meu Perfil</h2>
+        <a href="/formulario_de_cadastro.html" class="lista_menu_link">Minha conta</a>
+        <a href="/formulario_de_cadastro.html" class="lista_menu_link">Meus pedidos</a>
+        <a href="/formulario_de_cadastro.html" class="lista_menu_link">Sair</a>
+    </nav>
+
+    <!-- BANNER -->
+    <section class="banner">
+        <h2 class="banner_titulo">Já sabe por onde começar?</h2>
+        <p class="banner_texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input type="search" class="banner_pesquisa" placeholder="Qual será sua próxima leitura?">
+    </section>
+
+    <!-- CARROSSEL + CARD 01 -->
+    <h2 class="secao_titulo">Últimos Lançamentos</h2>
+    <div class="carrossel_e_card">
+
+        <!-- CARROSSEL -->
+        <section class="carrossel">
+            <div class="carrossel_marcacao">
+                <input class="marcacao marcacao_01" type="radio" name="marcacao" />
+                <input class="marcacao marcacao_01" type="radio" name="marcacao" />
+                <input class="marcacao marcacao_01" type="radio" name="marcacao" />
+                <input class="marcacao marcacao_01" type="radio" name="marcacao" />
+                <input class="marcacao marcacao_01" type="radio" name="marcacao" />
+            </div>
+            <div class="carrossel_corpo">
+                <div class="carrossel_slides carrossel_01_slides">
+                    <a href="#" class="carrossel_ancoras">
+                        <img src="/img/MEAN.png" alt="Livro MEAN, Full stack JavaScript para aplicações web com MongoDB, Express, Angular e Node" class="carrossel_imagens">
+                    </a>
+                </div>
+                <div class="carrossel_slides carrossel_01_slides">
+                    <a href="#" class="carrossel_ancoras">
+                        <img src="/img/Construct2.png" alt="Livro Construct 2, Crie seu o seu primeiro jogo multiplataforma" class="carrossel_imagens">
+                    </a>
+                </div>
+                <div class="carrossel_slides carrossel_01_slides">
+                    <a href="#" class="carrossel_ancoras">
+                        <img src="/img/UX.png" alt="Livro UX Estratégico, Design aplicado a ecossistema de produtos" class="carrossel_imagens">
+                    </a>
+                </div>
+                <div class="carrossel_slides carrossel_01_slides">
+                    <a href="#" class="carrossel_ancoras">
+                        <img src="/img/ReactNative.png" alt="Livro ReactNative, Desenvolvimento de aplicativos mobile com React." class="carrossel_imagens">
+                    </a>
+                </div>
+                <div class="carrossel_slides carrossel_01_slides">
+                    <a href="#" class="carrossel_ancoras">
+                        <img src="/img/Angular.png" alt="Livro Angular 11 e Firebase, Construíndo uma aplicação integrada com a plataforma do Google." class="carrossel_imagens">
+                    </a>
+                </div>
+                <div class="carrossel_slides carrossel_01_slides">
+                    <a href="#" class="carrossel_ancoras">
+                        <img src="/img/ApacheKafka.png" alt="Livro Apache Kafka e Spring Boot, Comunicação assíncrona entre microsserviços." class="carrossel_imagens">
+                    </a>
+                </div>
+            </div>
+
+            <div class="carrossel_botoes">
+                <button class="carrossel_botao botao_anterior_01" aria-label="Anterior"><</button>
+                <button class="carrossel_botao botao_proximo_01" aria-label="Próximo">></button>
+            </div>
+
+        </section>
+
+        <!-- CARD -->
+        <section class="card">
+            <div class="card_angular">
+                <div class="card_container_superior">
+                    <div class="card_textos">
+                            <h2 class="titulo_card">Talvez você também se interesse por...</h2>
+                            <h3 class="subtitulo_card">Angular 11 e Firebase</h3>
+                            <p class="paragrafo_card">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                    </div>
+                    <img src="/img/Angular_logo.png" alt="Logo da tecnologia Angular em vermelho em um fundo azul" class="card_logo_angular">
+                </div>
+                <div class="card_container_inferior">
+                    <ul class="card_botoes">
+                        <li class="botoes_item"></li><img src="img/Favoritos.svg" class="container_imagem" alt="Favoritar livro"></li>
+                        <li class="botoes_item"></li><img src="img/Compras.svg" class="container_imagem" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                        <a href="#" class="card_saiba_mais">Saiba mais</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- CARROSSEL + CARD 02 -->
+    <h2 class="secao_titulo">Mais vendidos</h2>
+    <div class="carrossel_e_card">
+
+        <!-- CARROSSEL -->
+        <section class="carrossel">
+            <div class="carrossel_marcacao">
+                <input class="marcacao marcacao_02" type="radio" name="marcacao" />
+                <input class="marcacao marcacao_02" type="radio" name="marcacao" />
+                <input class="marcacao marcacao_02" type="radio" name="marcacao" />
+                <input class="marcacao marcacao_02" type="radio" name="marcacao" />
+                <input class="marcacao marcacao_02" type="radio" name="marcacao" />
+            </div>
+            <div class="carrossel_corpo">
+                <div class="carrossel_slides carrossel_02_slides">
+                    <a href="#" class="carrossel_ancoras">
+                        <img src="/img/Portugol.png" alt="Livro Lógica de programação com Portugol, mais de 80 exemplos, 55 exercícios com gabarito e vídeos complementares." class="carrossel_imagens">
+                    </a>
+                </div>
+                <div class="carrossel_slides carrossel_02_slides">
+                    <a href="#" class="carrossel_ancoras">
+                        <img src="/img/Javascript.png" alt="Livro Javascript assertivo, testes e qualidade de código em todas as camadas da aplicação." class="carrossel_imagens">
+                    </a>
+                </div>
+                <div class="carrossel_slides carrossel_02_slides">
+                    <a href="#" class="carrossel_ancoras">
+                        <img src="/img/Guia Front-end.png" alt="Livro Guia Front-End, o caminho das pedras para ser um dev Front-End." class="carrossel_imagens">
+                    </a>
+                </div>
+                <div class="carrossel_slides carrossel_02_slides">
+                    <a href="#" class="carrossel_ancoras">
+                        <img src="/img/Nodejs.png" alt="Livro Construindo APIs REST com NodeJS." class="carrossel_imagens">
+                    </a>
+                </div>
+                <div class="carrossel_slides carrossel_02_slides">
+                    <a href="#" class="carrossel_ancoras">
+                        <img src="/img/Gestão2.png" alt="Livro Gestão de produtos, Como aumentar as chances de sucesso do seu software." class="carrossel_imagens">
+                    </a>
+                </div>
+                <div class="carrossel_slides carrossel_02_slides">
+                    <a href="#" class="carrossel_ancoras">
+                        <img src="/img/Liderança.png" alt="Livro Liderança em Design, habilidades de gestão para alavancar sua carreira." class="carrossel_imagens">
+                    </a>
+                </div>
+            </div>
+
+            <div class="carrossel_botoes">
+                <button class="carrossel_botao botao_anterior_02" aria-label="Anterior"><</button>
+                <button class="carrossel_botao botao_proximo_02" aria-label="Próximo">></button>
+            </div>
+
+        </section>        
+
+        <!-- CARD -->
+        <section class="card">
+            <div class="card_autora">
+                <div class="card_container_superior">
+                    <div class="card_textos">
+                            <img src="img/Estrelinhas.png" alt="Imagem de cinco estrelas douradas, lado a lado." class="estrelas_card">
+                            <h2 class="titulo_card">Autora do Mês</h2>
+                            <h3 class="subtitulo_card">Juliana Agarikov</h3>
+                            <p class="paragrafo_card">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+                    </div>
+                    <img src="img/Perfil-escritora 1.png" alt="Logo da tecnologia Angular em vermelho em um fundo azul" class="card_logo_angular">
+                </div>
+                <div class="card_container_inferior">
+                    <ul class="card_botoes">
+                        <li class="botoes_item"></li><img src="img/Favoritos.svg" class="container_imagem" alt="Favoritar livro"></li>
+                        <li class="botoes_item"></li><img src="img/Compras.svg" class="container_imagem" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                        <a href="#" class="card_saiba_mais">Saiba mais</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- TÓPICOS -->
+    <section class="container_topicos">
+        <h2 class="topicos_titulo">Tópicos visitados recentemente</h2>
+        <ul class="topicos_lista">
+            <li class="topicos_item"><a href="#" class="topicos_ancoras">Android</a></li>
+            <li class="topicos_item"><a href="#" class="topicos_ancoras">Marketing Digital</a></li>
+            <li class="topicos_item"><a href="#" class="topicos_ancoras">Agile</a></li>
+            <li class="topicos_item"><a href="#" class="topicos_ancoras">Startups</a></li>
+            <li class="topicos_item"><a href="#" class="topicos_ancoras">HTML & CSS</a></li>
+            <li class="topicos_item"><a href="#" class="topicos_ancoras">Python</a></li>
+            <li class="topicos_item"><a href="#" class="topicos_ancoras">OO</a></li>
+            <li class="topicos_item"><a href="#" class="topicos_ancoras">Java</a></li>
+        </ul>
+    </section>
+
+    <!-- CADASTRO CONTATO -->
+    <section class="container_contato">
+        <div class="contato_textos">
+            <h2 class="contato_titulo">Fique por dentro das novidades!</h2>
+            <p class="contato_paragrafo">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
+        <input type="email" class="contato_email" placeholder="Cadastre seu e-mail">
+    </section>
+
+    <!-- QUEBRA -->
+    <hr />
+
+    <!-- FOOTER 1024PX-->
+    <footer class="container_rodape rodape_desktop">
+        <ul class="rodape_lista rodape_lista_01">
+            <h2 class="rodape_titulo">Grupo Alura</h2>
+        </ul>
+        <ul class="rodape_lista">
+            <li><h2 class="rodape_titulo_lista">Educação</h2></li>
+            <li class="rodape_lista_item"><img src="/img/Caelum.png" alt="Logo empresa Caelum" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">Caelum</a></li>
+            <li class="rodape_lista_item"><img src="/img/CasaDoCodigo.png" alt="Logo empresa Casa do código" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">Casa do Código</a></li>
+        </ul>
+        <ul class="rodape_lista">
+            <li><h2 class="rodape_titulo_lista">Educação Online</h2></li>
+            <li class="rodape_lista_item"><img src="/img/Alura.png" alt="Logo empresa Alura" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">Alura</a></li>
+            <li class="rodape_lista_item"><img src="/img/AluraEmpresas.png" alt="Logo empresa Alura para Empresas" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">Alura para empresas</a></li>
+            <li class="rodape_lista_item"><img src="/img/AluraLatam.png" alt="Logo empresa Alura LATAM" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">Alura LATAM</a></li>
+            <li class="rodape_lista_item"><img src="/img/AluraStart.png" alt="Logo empresa Alura Start" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">Alura Start</a></li>
+            <li class="rodape_lista_item"><img src="/img/MusicDot.png" alt="Logo empresa MusicDot" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">MusicDot</a></li>
+            <li class="rodape_lista_item"><img src="/img/AluraLingua.png" alt="Logo empresa Alura Língua" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">Alura Língua</a></li>
+            <li class="rodape_lista_item"><img src="/img/PM3.png" alt="Logo empresa PM3" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">PM3</a></li>
+        </ul>
+        <ul class="rodape_lista">
+            <li><h2 class="rodape_titulo_lista">Comunidade</h2></li>
+            <li class="rodape_lista_item"><img src="/img/HipstersTech.png" alt="Logo comunidade Hipsters ponto Tech" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">Hipsters ponto Tech</a></li>
+            <li class="rodape_lista_item"><img src="/img/Scuba.png" alt="Logo comunidade Scuba Dev" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">Scuba Dev</a></li>
+            <li class="rodape_lista_item"><img src="/img/Layers.png" alt="Logo comunidade Layers ponto Tech" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">Layers ponto Tech</a></li>
+            <li class="rodape_lista_item"><img src="/img/LikeABoss.png" alt="Logo comunidade Like a Boss" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">Like a Boss</a></li>
+            <li class="rodape_lista_item"><img src="/img/CarreiraSemFronteira.png" alt="Logo comunidade Carreira sem Fronteira" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">Carreira sem Fronteira</a></li>
+            <li class="rodape_lista_item"><img src="/img/HipstersJobs.png" alt="Logo comunidade Hipsters ponto Jobs" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">Hipsters ponto Jobs</a></li>
+            <li class="rodape_lista_item"><img src="/img/GUJ.png" alt="Logo comunidade GUJ" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">GUJ</a></li>
+        </ul>
+    </footer>
+
+    <!-- FOOTER MOBILE -->
+    <footer class="container_rodape rodape_mobile">
+        <h2 class="rodape_titulo">Grupo Alura</h2>
+    </footer>
+
+    <script src="/js/menus.js"></script>
+    <script src="/js/carrossel.js"></script>
+
+</body>
+</html>

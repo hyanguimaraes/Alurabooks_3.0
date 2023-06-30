@@ -1,0 +1,102 @@
+/*CARTÃO*/
+.card{
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+}
+
+.card_angular, .card_autora{
+    background-color: var(--cor_-_branco_puro);
+    min-width: 340px;
+    max-width: 70vw;
+
+    border-radius: 8px;
+    padding: 1em;
+    box-shadow: 0px 0px 10px 0.2px var(--cor_-_preto);
+}
+
+/* CONTAINER SUPERIOR*/
+.card_container_superior{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.estrelas_card{
+    margin-bottom: 1em;
+}
+
+.titulo_card{
+    font-weight: 700;
+    color: var(--cor_-_amarelo);
+}
+
+.subtitulo_card{
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--cor_-_azul_escuro);
+    margin: 1em 0;
+}
+
+.paragrafo_card{
+    font-size: 14px;
+}
+
+.card_logo_angular{
+    height: 170px;
+    width: auto;
+}
+
+/*CONTAINER INFERIOR*/
+.card_container_inferior{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.card_botoes{
+    display: inline-flex;
+    justify-content: flex-start;
+}
+
+.card_saiba_mais{
+    text-decoration: none;
+    width: 163px;
+    color: var(--cor_-_branco_puro);
+    background-color: var(--cor_-_amarelo);
+    font-weight: 700;
+    padding: 1em 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .card{
+        margin: 3em 0;
+    }
+
+    .card_angular, .card_autora{
+        max-width: 585px;
+    }
+
+    .card_textos{
+        max-width: 340px;
+    }
+}
+
+@media screen and (min-width: 1728px){
+    /*.card{
+        margin: 7.25em 0;
+    }*/
+
+    .card_angular, .card_autora{
+        width: 35vw;
+    }
+
+    .card_textos{
+        max-width: 385px;
+    }
+
+    .titulo_card{
+        font-size: 32px;
+    }
+}
