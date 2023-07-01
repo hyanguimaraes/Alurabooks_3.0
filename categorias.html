@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraBooks - Cadastro</title>
+    
+    <!-- ÍCONE NO TÍTULO -->
+    <link rel="icon" href="img/Logo.svg" type = "image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">    
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container_cabecalho cabecalho_esquerdo">
+            <button class="cabecalho_menu_hamburguer" aria-label="Menu"><i></i></button>
+            <a href="index.html"><img src="img/Logo.svg" class="container_imagem" alt="Logo do AluraBooks"></a>
+            <a href="index.html" class="cabecalho_titulo"><h1 class="cabecalho_titulo"><b class="cabecalho_titulo_negrito">Alura</b>Books</h1></a>
+        </div>
+
+        <ul class="cabecalho_opcoes">
+            <li class="cabecalho_opcoes_item"><button class="cabecalho_opcoes_botao" aria-label="Menu Categorias"><i></i>Categorias</button></li>
+            <li class="cabecalho_opcoes_item"><a href="/formulario_de_cadastro.html" class="cabecalho_opcoes_ancora">Favoritos</a></li>
+            <li class="cabecalho_opcoes_item"><a href="/formulario_de_cadastro.html" class="cabecalho_opcoes_ancora">Minha estante</a></li>
+        </ul>
+        
+        <div class="container_cabecalho cabecalho_direito">
+            <a href="/index.html" id="container_imagem_favoritos"><img src="img/Favoritos.svg" class="container_imagem" alt="Meus Favoritos"></a>
+            <a href="/index.html" class="imagem_com_texto"><img src="img/Compras.svg" class="container_imagem" alt="Carrinho de compras"><p class="cabecalho_logo_texto">Minha Sacola</p></a>
+            <button class="cabecalho_menu_usuario" aria-label="Menu"><i></i></button>
+        </div>
+    </header>
+
+    <nav class="lista_menu_hamburger">
+        <h2 class="lista_menu_titulo">Categorias</h2>
+        <a href="/categorias.html" class="lista_menu_link">Programação</a>
+        <a href="/categorias.html" class="lista_menu_link">Front-End</a>
+        <a href="/categorias.html" class="lista_menu_link">Infraestrutura</a>
+        <a href="/categorias.html" class="lista_menu_link">Business</a>
+        <a href="/categorias.html" class="lista_menu_link">Design & Ux</a>
+    </nav>
+
+    <nav class="lista_menu_usuario">
+        <h2 class="lista_menu_titulo">Meu Perfil</h2>
+        <a href="/formulario_de_cadastro.html" class="lista_menu_link">Minha conta</a>
+        <a href="/formulario_de_cadastro.html" class="lista_menu_link">Meus pedidos</a>
+        <a href="/formulario_de_cadastro.html" class="lista_menu_link">Sair</a>
+    </nav> 
+    
+    <!-- BANNER -->
+    <section class="banner"></section>
+
+    <!-- BOTÕES DE FILTROS -->
+    <nav class="wrap">
+        <ul class="nav">
+            <li><button class="btn btn-front" href="#" id="btnFiltrarLivrosFront" value="front-end">Livros de Front-end</button></li>
+            <li><button class="btn btn-back" href="#" id="btnFiltrarLivrosback" value="back-end">Livros de Back-end</button></li>
+            <li><button class="btn btn-dados" href="#" id="btnFiltrarLivrosDados" value="dados">Livros de dados</button></li>
+            <li><button class="btn btn-uxui" href="#" id="btnFiltrarLivrosUxui" value="uxui">Livros de design</button></li>
+            <li><button class="btn btn-gestao" href="#" id="btnFiltrarLivrosGestao" value="gestao">Livros de gestão</button></li>
+            <li><button class="btn btn-disponiveis" href="#" id="btnLivrosDisponiveis">Livros disponíveis</button></li>
+            <li><button class="btn btn-ordenacao" href="#" id="btnOrdenarPorPreco">Ordenar por preço</button></li>
+        </ul>
+    </nav>
+
+    <!-- LIVROS -->
+    <section class="livros wrap" id="livros">
+        <!-- LIVRO 01 -->
+        <div class="livro">
+            <img src="/img/Cangaceiro_Javascript.png" alt="Capa do livro Cangaceiro JavaScript" class="livro_imagens">
+            <h2 class="livro_titulo">Cangaceiro JavaScript: Uma aventura no sertão da programação</h2>
+            <p class="livro_descricao">Flávio Almeida</p>
+            <p class="livro_preco" id="preco">R$29,90</p>
+            <div class="tags">
+                <span class="tag">Front-end</span>
+            </div>
+        </div>
+    
+        <!-- LIVRO 02 -->
+        <div class="livro">
+            <img src="/img/O_Retorno_do_cangaceiro_JavaScript.png" alt="Capa do livro Cangaceiro JavaScript + O Retorno do Cangaceiro JavaScript" class="livro_imagens">
+            <h2 class="livro_titulo">Cangaceiro JavaScript + O Retorno do Cangaceiro JavaScript</h2>
+            <p class="livro_descricao">Flávio Almeida</p>
+            <p class="livro_preco" id="preco">R$29,90</p>
+            <div class="tags">
+                <span class="tag">Front-end</span>
+            </div>
+        </div>
+
+        <!-- LIVRO 03 -->
+        <div class="livro">
+            <img src="/img/O_retorno_do_cangaceiro_JavaScript2.png" alt="Capa do livro O Retorno do Cangaceiro JavaScript" class="livro_imagens">
+            <h2 class="livro_titulo">O Retorno do Cangaceiro JavaScript: De padrões a uma abordagem funcional</h2>
+            <p class="livro_descricao">Flávio Almeida</p>
+            <p class="livro_preco" id="preco">R$29,90</p>
+            <div class="tags">
+                <span class="tag">Front-end</span>
+            </div>
+        </div>
+
+        <!-- LIVRO 04 -->
+        <div class="livro">
+            <img src="/img/Acessibilidade_na_Web.png" alt="Capa do livro Acessibilidade na Web" class="livro_imagens">
+            <h2 class="livro_titulo">Acessibilidade na Web: Boas práticas para construir sites e aplicações acessíveis</h2>
+            <p class="livro_descricao">Reinaldo Ferraz</p>
+            <p class="livro_preco" id="preco">R$29,90</p>
+            <div class="tags">
+                <span class="tag">Front-end</span>
+                <span class="tag">Back-end</span>
+            </div>
+        </div>
+
+        <!-- LIVRO 05 -->
+        <div class="livro">
+            <img src="/img/A_Web_Mobile.png" alt="Capa do livro A Web Mobile: Design Responsivo e além para Web adaptada ao mundo mobile" class="livro_imagens">
+            <h2 class="livro_titulo">A Web Mobile: Design Responsivo e além para Web adaptada ao mundo mobile</h2>
+            <p class="livro_descricao">Sérgio Lopes</p>
+            <p class="livro_preco" id="preco">R$29,90</p>
+            <div class="tags">
+                <span class="tag">Front-end</span>
+                <span class="tag">Back-end</span>
+            </div>
+        </div>
+
+        <!-- LIVRO 06 -->
+        <div class="livro">
+            <img src="/img/Coletanea_Front-end.png" alt="Capa do livro Coletânea Front-end: Uma antologia da comunidade front-end brasileira" class="livro_imagens">
+            <h2 class="livro_titulo">Coletânea Front-end: Uma antologia da comunidade front-end brasileira</h2>
+            <p class="livro_descricao">Múltiplos autores</p>
+            <p class="livro_preco" id="preco">R$29,90</p>
+            <div class="tags">
+                <span class="tag">Front-end</span>
+                <span class="tag">Back-end</span>
+            </div>
+        </div>
+
+        <!-- LIVRO 07 -->
+        <div class="livro">
+            <img src="/img/Guia Front-end.png" alt="Capa do livro Guia Front-End: O caminho das pedras para ser um dev Front-End" class="livro_imagens">
+            <h2 class="livro_titulo">Guia Front-End: O caminho das pedras para ser um dev Front-End</h2>
+            <p class="livro_descricao">Diego Eis</p>
+            <p class="livro_preco" id="preco">R$29,90</p>
+            <div class="tags">
+                <span class="tag">Front-end</span>
+            </div>
+        </div>
+
+        <!-- LIVRO 08 -->
+        <div class="livro">
+            <img src="/img/HTML_e_CSS3.png" alt="Capa do livro HTML5 e CSS3: Domine a web do futuro" class="livro_imagens">
+            <h2 class="livro_titulo">HTML5 e CSS3: Domine a web do futuro</h2>
+            <p class="livro_descricao">Lucas Mazza</p>
+            <p class="livro_preco" id="preco">R$29,90</p>
+            <div class="tags">
+                <span class="tag">Front-end</span>
+            </div>
+        </div>
+
+        <!-- LIVRO 09 -->
+        <div class="livro">
+            <img src="/img/Bootstrap4.png" alt="Capa do livro Bootstrap 4: Conheça a biblioteca front-end mais utilizada do mundo" class="livro_imagens">
+            <h2 class="livro_titulo">Bootstrap 4: Conheça a biblioteca front-end mais utilizada do mundo</h2>
+            <p class="livro_descricao">Natan Souza</p>
+            <p class="livro_preco" id="preco">R$29,90</p>
+            <div class="tags">
+                <span class="tag">Front-end</span>
+            </div>
+        </div>
+
+        <!-- LIVRO 10 -->
+        <div class="livro">
+            <img src="/img/Sass.png" alt="Capa do livro SASS: Aprendendo pré-processadores CSS" class="livro_imagens">
+            <h2 class="livro_titulo">SASS: Aprendendo pré-processadores CSS</h2>
+            <p class="livro_descricao">Natan Souza</p>
+            <p class="livro_preco" id="preco">R$29,90</p>
+            <div class="tags">
+                <span class="tag">Front-end</span>
+            </div>
+        </div>
+
+        <!-- LIVRO 11 -->
+        <div class="livro">
+            <img src="/img/Turbine_seu_CSS.png" alt="Capa do livro Turbine seu CSS: Folhas de estilo inteligentes com SASS" class="livro_imagens">
+            <h2 class="livro_titulo">Turbine seu CSS: Folhas de estilo inteligentes com SASS</h2>
+            <p class="livro_descricao">Rosicléia Frasson</p>
+            <p class="livro_preco" id="preco">R$29,90</p>
+            <div class="tags">
+                <span class="tag">Front-end</span>
+            </div>
+        </div>
+
+        <!-- LIVRO 12 -->
+        <div class="livro">
+            <img src="/img/CSS_Eficiente.png" alt="Capa do livro CSS Eficiente: Técnicas e ferramentas que fazem a diferença nos seus estilos" class="livro_imagens">
+            <h2 class="livro_titulo">CSS Eficiente: Técnicas e ferramentas que fazem a diferença nos seus estilos</h2>
+            <p class="livro_descricao">Rosicléia Frasson</p>
+            <p class="livro_preco" id="preco">R$29,90</p>
+            <div class="tags">
+                <span class="tag">Front-end</span>
+            </div>
+        </div>
+        
+        <!-- LIVRO 13 -->
+        <div class="livro">
+            <img src="/img/Angular.png" alt="Capa do livro Angular 11 e Firebase: Construindo uma aplicação integrada com a plataforma Google" class="livro_imagens">
+            <h2 class="livro_titulo">Angular 11 e Firebase: Construindo uma aplicação integrada com a plataforma Google</h2>
+            <p class="livro_descricao">Kheronn Khennedy Machado</p>
+            <p class="livro_preco" id="preco">R$29,90</p>
+            <div class="tags">
+                <span class="tag">Front-end</span>
+                <span class="tag">Back-end</span>
+            </div>
+        </div>
+        
+        <!-- LIVRO 14 -->
+        <div class="livro">
+            <img src="/img/Guia_pratico_de_Typescript.png" alt="Capa do livro Guia prático de TypeScript: Melhore suas aplicações JavaScript" class="livro_imagens">
+            <h2 class="livro_titulo">Guia prático de TypeScript: Melhore suas aplicações JavaScript</h2>
+            <p class="livro_descricao">Thiago da Silva Adriano</p>
+            <p class="livro_preco" id="preco">R$29,90</p>
+            <div class="tags">
+                <span class="tag">Front-end</span>
+            </div>
+        </div>
+                
+        <!-- LIVRO 15 -->
+        <div class="livro">
+            <img src="/img/Front-end-com-Vue.js.png" alt="Capa do livro Front-End com Vue.js: Da teoria à prática sem complicações" class="livro_imagens">
+            <h2 class="livro_titulo">Front-End com Vue.js: Da teoria à prática sem complicações</h2>
+            <p class="livro_descricao">Leonardo Vilarinho</p>
+            <p class="livro_preco" id="preco">R$29,90</p>
+            <div class="tags">
+                <span class="tag">Front-end</span>
+            </div>
+        </div>
+                        
+        <!-- LIVRO 16 -->
+        <div class="livro">
+            <img src="/img/Vue.js.png" alt="Capa do livro Vue.js: Construa aplicações incríveis" class="livro_imagens">
+            <h2 class="livro_titulo">Vue.js: Construa aplicações incríveis</h2>
+            <p class="livro_descricao">Caio Incau</p>
+            <p class="livro_preco" id="preco">R$29,90</p>
+            <div class="tags">
+                <span class="tag">Front-end</span>
+                <span class="tag">Back-end</span>
+            </div>
+        </div>
+
+        <!-- LIVRO 17 -->
+        <div class="livro">
+            <img src="/img/UX.png" alt="Capa do livro UX Estratégico: Design aplicado a ecossistema de produtos" class="livro_imagens">
+            <h2 class="livro_titulo">UX Estratégico: Design aplicado a ecossistema de produtos</h2>
+            <p class="livro_descricao">Gabriel Pinheiro</p>
+            <p class="livro_preco" id="preco">R$29,90</p>
+            <div class="tags">
+                <span class="tag">Front-end</span>
+                <span class="tag">UX / UI</span>
+            </div>
+        </div>
+
+        <!-- LIVRO 18 -->
+        <div class="livro">
+            <img src="/img/ApacheKafka.png" alt="Capa do livro Apache Kafka e Spring Boot: Comunicação assíncrona entre microsserviços" class="livro_imagens">
+            <h2 class="livro_titulo">Apache Kafka e Spring Boot: Comunicação assíncrona entre microsserviços</h2>
+            <p class="livro_descricao">Eduardo Felipe Zambom Santana</p>
+            <p class="livro_preco" id="preco">R$29,90</p>
+            <div class="tags">
+                <span class="tag">Back-end</span>
+            </div>
+        </div>
+
+        <!-- LIVRO 19 -->
+        <div class="livro">
+            <img src="/img/Construct2.png" alt="Capa do livro Construct 2: Crie o seu primeiro jogo multiplataforma" class="livro_imagens">
+            <h2 class="livro_titulo">Construct 2: Crie o seu primeiro jogo multiplataforma</h2>
+            <p class="livro_descricao">Bruna Escudelario e Diego Pinho</p>
+            <p class="livro_preco" id="preco">R$29,90</p>
+            <div class="tags">
+                <span class="tag">Front-end</span>
+                <span class="tag">Back-end</span>
+            </div>
+        </div>
+
+        <!-- LIVRO 20 -->
+        <div class="livro">
+            <img src="/img/Gestão2.png" alt="Capa do livro Gestão de produtos: Como aumentar as chances de sucesso do seu software" class="livro_imagens">
+            <h2 class="livro_titulo">Gestão de produtos: Como aumentar as chances de sucesso do seu software</h2>
+            <p class="livro_descricao">Joaquim Torres</p>
+            <p class="livro_preco" id="preco">R$29,90</p>
+            <div class="tags">
+                <span class="tag">Gestão</span>
+            </div>
+        </div>
+
+        <!-- LIVRO 21 -->
+        <div class="livro">
+            <img src="/img/Javascript.png" alt="Capa do livro JavaScript Assertivo: Testes e qualidade de código em todas as camadas da aplicação" class="livro_imagens">
+            <h2 class="livro_titulo">JavaScript Assertivo: Testes e qualidade de código em todas as camadas da aplicação</h2>
+            <p class="livro_descricao">Gabriel Franco</p>
+            <p class="livro_preco" id="preco">R$29,90</p>
+            <div class="tags">
+                <span class="tag">Front-end</span>
+                <span class="tag">Back-end</span>
+            </div>
+        </div>
+
+        <!-- LIVRO 21 -->
+        <div class="livro">
+            <img src="/img/Liderança.png" alt="Capa do livro Liderança em Design" class="livro_imagens">
+            <h2 class="livro_titulo">Liderança em Design: Habilidades de gestão para alavancar sua carreira</h2>
+            <p class="livro_descricao">Victor Zanini</p>
+            <p class="livro_preco" id="preco">R$29,90</p>
+            <div class="tags">
+                <span class="tag">Gestão</span>
+                <span class="tag">UX / UI</span>
+            </div>
+        </div>
+
+        <!-- LIVRO 22 -->
+        <div class="livro">
+            <img src="/img/MEAN.png" alt="Capa do livro MEAN: Full stack JavaScript para aplicações web com MongoDB, Express, Angular e Node" class="livro_imagens">
+            <h2 class="livro_titulo">MEAN: Full stack JavaScript para aplicações web com MongoDB, Express, Angular e Node</h2>
+            <p class="livro_descricao">Flávio Almeida</p>
+            <p class="livro_preco" id="preco">R$29,90</p>
+            <div class="tags">
+                <span class="tag">Front-end</span>
+                <span class="tag">Back-end</span>
+            </div>
+        </div>
+
+        <!-- LIVRO 23 -->
+        <div class="livro">
+            <img src="/img/Nodejs.png" alt="Capa do livro Construindo APIs REST com Node.js" class="livro_imagens">
+            <h2 class="livro_titulo">Construindo APIs REST com Node.js</h2>
+            <p class="livro_descricao">Caio Ribeiro Pereira</p>
+            <p class="livro_preco" id="preco">R$29,90</p>
+            <div class="tags">
+                <span class="tag">Back-end</span>
+            </div>
+        </div>
+        
+        <!-- LIVRO 24 -->
+        <div class="livro">
+            <img src="/img/Portugol.png" alt="Capa do livro Lógica de programação com Portugol" class="livro_imagens">
+            <h2 class="livro_titulo">Lógica de programação com Portugol</h2>
+            <p class="livro_descricao">Joice Barbosa Mendes e Rafel da Silva Muniz</p>
+            <p class="livro_preco" id="preco">R$29,90</p>
+            <div class="tags">
+                <span class="tag">Front-end</span>
+                <span class="tag">Back-end</span>
+            </div>
+        </div>
+        
+        <!-- LIVRO 25 -->
+        <div class="livro">
+            <img src="/img/ReactNative.png" alt="Capa do livro React Native: Desenvolvimento de aplicativos mobile com React" class="livro_imagens">
+            <h2 class="livro_titulo">React Native: Desenvolvimento de aplicativos mobile com React</h2>
+            <p class="livro_descricao">Bruna Escudelario e Diego Pinho</p>
+            <p class="livro_preco" id="preco">R$29,90</p>
+            <div class="tags">
+                <span class="tag">Front-end</span>
+                <span class="tag">Back-end</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="valor_total_livros_disponiveis">
+        <div class="livros_disponiveis">
+          <p>Todos os livros disponíveis por R$ <span id="valor">299,00</span></p>
+        </div>
+    </section>
+
+    <!-- QUEBRA -->
+    <hr />
+
+    <!-- FOOTER 1024PX-->
+    <footer class="container_rodape rodape_desktop">
+        <ul class="rodape_lista rodape_lista_01">
+            <h2 class="rodape_titulo">Grupo Alura</h2>
+        </ul>
+        <ul class="rodape_lista">
+            <li><h2 class="rodape_titulo_lista">Educação</h2></li>
+            <li class="rodape_lista_item"><img src="/img/Caelum.png" alt="Logo empresa Caelum" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">Caelum</a></li>
+            <li class="rodape_lista_item"><img src="/img/CasaDoCodigo.png" alt="Logo empresa Casa do código" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">Casa do Código</a></li>
+        </ul>
+        <ul class="rodape_lista">
+            <li><h2 class="rodape_titulo_lista">Educação Online</h2></li>
+            <li class="rodape_lista_item"><img src="/img/Alura.png" alt="Logo empresa Alura" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">Alura</a></li>
+            <li class="rodape_lista_item"><img src="/img/AluraEmpresas.png" alt="Logo empresa Alura para Empresas" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">Alura para empresas</a></li>
+            <li class="rodape_lista_item"><img src="/img/AluraLatam.png" alt="Logo empresa Alura LATAM" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">Alura LATAM</a></li>
+            <li class="rodape_lista_item"><img src="/img/AluraStart.png" alt="Logo empresa Alura Start" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">Alura Start</a></li>
+            <li class="rodape_lista_item"><img src="/img/MusicDot.png" alt="Logo empresa MusicDot" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">MusicDot</a></li>
+            <li class="rodape_lista_item"><img src="/img/AluraLingua.png" alt="Logo empresa Alura Língua" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">Alura Língua</a></li>
+            <li class="rodape_lista_item"><img src="/img/PM3.png" alt="Logo empresa PM3" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">PM3</a></li>
+        </ul>
+        <ul class="rodape_lista">
+            <li><h2 class="rodape_titulo_lista">Comunidade</h2></li>
+            <li class="rodape_lista_item"><img src="/img/HipstersTech.png" alt="Logo comunidade Hipsters ponto Tech" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">Hipsters ponto Tech</a></li>
+            <li class="rodape_lista_item"><img src="/img/Scuba.png" alt="Logo comunidade Scuba Dev" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">Scuba Dev</a></li>
+            <li class="rodape_lista_item"><img src="/img/Layers.png" alt="Logo comunidade Layers ponto Tech" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">Layers ponto Tech</a></li>
+            <li class="rodape_lista_item"><img src="/img/LikeABoss.png" alt="Logo comunidade Like a Boss" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">Like a Boss</a></li>
+            <li class="rodape_lista_item"><img src="/img/CarreiraSemFronteira.png" alt="Logo comunidade Carreira sem Fronteira" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">Carreira sem Fronteira</a></li>
+            <li class="rodape_lista_item"><img src="/img/HipstersJobs.png" alt="Logo comunidade Hipsters ponto Jobs" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">Hipsters ponto Jobs</a></li>
+            <li class="rodape_lista_item"><img src="/img/GUJ.png" alt="Logo comunidade GUJ" class="rodape_lista_logo"><a href="#" class="rodape_lista_ancora">GUJ</a></li>
+        </ul>
+    </footer>
+
+    <!-- FOOTER MOBILE -->
+    <footer class="container_rodape rodape_mobile">
+        <h2 class="rodape_titulo">Grupo Alura</h2>
+    </footer>
+
+    <script src="/js/menus.js"></script>
+    <script src="/js/formulario.js"></script>
+
+</body>
+</html>

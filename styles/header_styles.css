@@ -124,7 +124,7 @@
 
 @media screen and (min-width: 1024px) {
     .cabecalho{
-        height: 5vh;
+        height: 6vh;
     }
 
     .cabecalho_menu_hamburguer{
@@ -133,7 +133,7 @@
 
     .container_imagem{
         padding: 0;
-        margin: 0 1em;
+        margin: 0.2em 1em;
     }
 
     .cabecalho_titulo, .cabecalho_titulo_negrito{
@@ -146,6 +146,8 @@
     }
 
     .cabecalho_titulo{
+        text-decoration: none;
+        color: var(--cor_-_preto);
         font-weight: 400;
         display: block;
     }
