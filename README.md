@@ -1,10 +1,10 @@
-<h1 align="center"> AluraBooks 2.0</h1>
+<h1 align="center"> AluraBooks 3.0</h1>
 
-![](https://raw.githubusercontent.com/hyanguimaraes/Alurabooks_2.0/main/readme/Alurabooks_desktop_finalizado_2.gif#vitrinedev)
+![](https://raw.githubusercontent.com/hyanguimaraes/Alurabooks_3.0/main/readme/Alurabooks_desktop_finalizado_3.gif#vitrinedev)
 
-![](https://img.shields.io/github/forks/hyanguimaraes/Alurabooks_2.0?style=social) ![](https://img.shields.io/github/last-commit/hyanguimaraes/Alurabooks_2.0?style=plastic)
+![](https://img.shields.io/github/forks/hyanguimaraes/Alurabooks_3.0?style=social) ![](https://img.shields.io/github/last-commit/hyanguimaraes/Alurabooks_3.0?style=plastic)
 
-📝 Descrição do projeto
+📝 Descrição do projeto **_ALTERAR_**
 ---
 Formulário de cadastro de clientes que usa a API do ViaCEP para preenchimento automático dos campos de endereço. **Basta preencher o CEP que a página preenche o restante do endereço para você!**
 
@@ -14,27 +14,26 @@ Eu nunca havia utilizado JS assíncrono e foi muito importante aprender os conce
 
 <h3>✅ Versão mobile 428px 📱</h3>
 
-![](https://raw.githubusercontent.com/hyanguimaraes/Alurabooks_2.0/main/readme/Alurabooks_mobile_finalizado_2.gif)
+![](https://raw.githubusercontent.com/hyanguimaraes/Alurabooks_3.0/main/readme/Alurabooks_mobile_finalizado_3.gif)
 
 <h3>✅ Versão tablet 1024px 📱</h3>
 
-![](https://raw.githubusercontent.com/hyanguimaraes/Alurabooks_2.0/main/readme/Alurabooks_tablet_finalizado_2.gif)
+![](https://raw.githubusercontent.com/hyanguimaraes/Alurabooks_3.0/main/readme/Alurabooks_tablet_finalizado_3.gif)
 
 <h3>✅ Versão desktop 1728px 🖥️</h3>
 
-![](https://raw.githubusercontent.com/hyanguimaraes/Alurabooks_2.0/main/readme/Alurabooks_desktop_finalizado_2.gif)
+![](https://raw.githubusercontent.com/hyanguimaraes/Alurabooks_3.0/main/readme/Alurabooks_desktop_finalizado_3.gif)
 
 
-[🔗 Acesse o projeto](https://alurabooks-2-0.vercel.app/formulario_de_cadastro.html)
+[🔗 Acesse o projeto](https://alurabooks-3-0.vercel.app/formulario_de_cadastro.html)
 
-[📚 Página do curso "JavaScript: consumindo e tratando dados de uma API" na plataforma Alura](https://cursos.alura.com.br/course/javascript-consumindo-tratando-dados-api)
+[📚 Página do curso "JavaScript: métodos de array" na plataforma Alura](https://cursos.alura.com.br/course/javascript-metodos-array)
 
 🛠️ Tecnologias utilizadas
 ---
 - ``HTML5``
 - ``CSS3``
 - ``JavaScript``
-- ``ViaCEP API``
 
 ✍🏻 Autor
 ---
