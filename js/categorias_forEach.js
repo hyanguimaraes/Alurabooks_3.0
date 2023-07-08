@@ -4,6 +4,7 @@
 const elementoParaInserirLivros = document.getElementById('livros');
 
 function exibirOsLivrosNaTela(listaDeLivros){
+    elementoParaInserirLivros.innerHTML = '';
     //Para cada livro no array, insere no HTML a div com os dados fornecidos pela API;
     listaDeLivros.forEach(livro => {
         elementoParaInserirLivros.innerHTML += `
