@@ -23,7 +23,7 @@ Terceira versão do site da empresa fictícia AluraBooks, criado nas versões _m
 ![](https://raw.githubusercontent.com/hyanguimaraes/Alurabooks_3.0/main/readme/Alurabooks_desktop_finalizado_3.gif)
 
 
-[🔗 Acesse o projeto](alterar link)
+[🔗 Acesse o projeto](https://alurabooks-3-0.vercel.app/categorias.html)
 
 [📚 Página do curso "JavaScript: métodos de array" na plataforma Alura](https://cursos.alura.com.br/course/javascript-metodos-array)
 
