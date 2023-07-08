@@ -15,7 +15,7 @@ function filtrarLivros(){
     /* Pega o que está no "value" (dentro do HTML) do botão clicado */
     const categoria = elementoBtn.value;
 
-    /* Nova variável "Livros Filtrados" é criada com os resultados obtidos da filtragem usando como filtro a categoria (value) daquele botão*/    
-    let livrosFiltrados = livros.filter(livro => livro.categoria == categoria);
+    /* Nova variável "Livros Filtrados" é criada. Usando um operador ternário, o filtro pega apenas os livros marcados como disponíveis. Caso contrário, usa como filtro a categoria (value) daquele botão*/    
+    let livrosFiltrados = categoria == 'disponivel' ? livros.filter(livro => livro.quantidade > 0) : livros.filter(livro => livro.categoria == categoria);
     exibirOsLivrosNaTela(livrosFiltrados);
 }
