@@ -16,6 +16,31 @@ function filtrarLivros(){
     const categoria = elementoBtn.value;
 
     /* Nova variável "Livros Filtrados" é criada. Usando um operador ternário, o filtro pega apenas os livros marcados como disponíveis. Caso contrário, usa como filtro a categoria (value) daquele botão*/    
-    let livrosFiltrados = categoria == 'disponivel' ? livros.filter(livro => livro.quantidade > 0) : livros.filter(livro => livro.categoria == categoria);
+    let livrosFiltrados = categoria == 'disponivel' ? filtrarPorDisponibilidade() : filtrarPorCategoria(categoria);
     exibirOsLivrosNaTela(livrosFiltrados);
+
+    /* Verifica os livros que possuem a categoria 'disponivel' e chama a função 'Exibir valor total dos livros disponíveis na tela' */
+    if (categoria == 'disponivel'){
+        const valorTotal = calcularValorTotalDeLivrosDisponiveis(livrosFiltrados);
+        exibirValorTotalDosLivrosDisponiveisNaTela(valorTotal);
+    }
+}
+
+function filtrarPorCategoria(categoria) {
+    return livros.filter(livro => livro.categoria == categoria);
+}
+
+function filtrarPorDisponibilidade() {
+    return livros.filter(livro => livro.quantidade > 0);
+}
+
+/* Função 'Exibir valor total dos livros disponíveis na tela' que adiciona o HTML da seção que mostra o somatório dos preços dos livros disponíveis em cada categoria selecionada */
+function exibirValorTotalDosLivrosDisponiveisNaTela(valorTotal){
+    elementoComValorTotalDeLivrosDisponiveis.innerHTML = `
+    <section id="valor_total_livros_disponiveis">
+        <div class="livros_disponiveis">
+            <p>Todos os livros disponíveis por R$ <span id="valor">${valorTotal}</span></p>
+        </div>
+    </section>
+    `
 }

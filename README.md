@@ -1,16 +1,14 @@
 <h1 align="center"> AluraBooks 3.0</h1>
 
-![](https://raw.githubusercontent.com/hyanguimaraes/Alurabooks_3.0/main/readme/Alurabooks_desktop_finalizado_3.gif#vitrinedev)
+![](https://raw.githubusercontent.com/hyanguimaraes/Alurabooks_3.0/main/readme/Alurabooks_desktop_finalizado_3_capa.gif#vitrinedev)
 
 ![](https://img.shields.io/github/forks/hyanguimaraes/Alurabooks_3.0?style=social) ![](https://img.shields.io/github/last-commit/hyanguimaraes/Alurabooks_3.0?style=plastic)
 
-📝 Descrição do projeto **_ALTERAR_**
+📝 Descrição do projeto
 ---
-Formulário de cadastro de clientes que usa a API do ViaCEP para preenchimento automático dos campos de endereço. **Basta preencher o CEP que a página preenche o restante do endereço para você!**
+Página de categorias mostrando os livros de programação disponíveis para compra na AluraBooks. A página contém botões para filtrar os livros por categoria, ordaná-los por preço ou exibir apenas os livros disponíveis em estoque. Todos os dados dos livros são importados de uma API e a página dinâmica é criada pelo JavaScript.
 
-Segunda versão do site da empresa fictícia AluraBooks, criado nas versões _mobile_, _tablet_ e _desktop_. Desta vez, o foco do estudo era aplicar conhecimentos de JavaScript assíncrono e aprender a consumir dados de uma API. A página do formulário foi criada do zero, para estudo no curso "JavaScript: consumindo e tratando dados de uma API". O projeto foi todo desenvolvido seguindo a metodologia _Mobile first_.
-
-Eu nunca havia utilizado JS assíncrono e foi muito importante aprender os conceitos básicos para utilização deste método. Toda parte de _promises_ foi conhecimento completamente novo para mim. Ainda tenho muito a aprender sobre o assunto, mas essa base foi essencial para a continuidade dos meus estudos!
+Terceira versão do site da empresa fictícia AluraBooks, criado nas versões _mobile_, _tablet_ e _desktop_. Desta vez, o foco do estudo era conhecer e aplicar os diferentes ***métodos de arrays*** disponíveis, principalmente: **forEach**, **filter**, **sort** e **reduce** para o funcionamento dos botões de filtros e categorias da página que foi criada do zero, para estudo no curso "JavaScript: métodos de array". O projeto foi todo desenvolvido seguindo a metodologia _Mobile first_.
 
 <h3>✅ Versão mobile 428px 📱</h3>
 
@@ -25,7 +23,7 @@ Eu nunca havia utilizado JS assíncrono e foi muito importante aprender os conce
 ![](https://raw.githubusercontent.com/hyanguimaraes/Alurabooks_3.0/main/readme/Alurabooks_desktop_finalizado_3.gif)
 
 
-[🔗 Acesse o projeto](https://alurabooks-3-0.vercel.app/formulario_de_cadastro.html)
+[🔗 Acesse o projeto](alterar link)
 
 [📚 Página do curso "JavaScript: métodos de array" na plataforma Alura](https://cursos.alura.com.br/course/javascript-metodos-array)
 

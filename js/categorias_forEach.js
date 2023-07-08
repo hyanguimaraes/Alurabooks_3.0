@@ -3,9 +3,12 @@
 //Inserindo os livros do array na section "Livros" do HTML;
 const elementoParaInserirLivros = document.getElementById('livros');
 
+//Captura a seção do valor total dos livros disponívels do HTML;
+const elementoComValorTotalDeLivrosDisponiveis = document.getElementById('valor_total_livros_disponiveis');
 
 /* Função que cria todo o HTML para cada livro recebido da lista de livros gerada pelo Fetch API */
 function exibirOsLivrosNaTela(listaDeLivros){
+    elementoComValorTotalDeLivrosDisponiveis.innerHTML = '';
     elementoParaInserirLivros.innerHTML = '';
     //Para cada livro no array, insere no HTML a div com os dados fornecidos pela API;
     listaDeLivros.forEach(livro => {
